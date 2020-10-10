@@ -1,0 +1,196 @@
+body
+			{
+				font-family:time new roman;
+				width: 1100px;/* Độ rộng chung của cả trang*/
+				margin: 0px auto;/*Căn giữa nội dung*/
+			}
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			/*==Style cho menu===*/
+			#menu ul {
+			  background: #FF3333;
+			  list-style-type: none;
+			  text-align: center
+			
+			}
+			#menu li {
+			  color: #f1f1f1;
+			  display: inline-block;
+			  line-height: 30px;
+			  margin-left: -10px;
+			  position: relative;
+			  padding:20px;
+			}
+			#menu a {
+			  text-decoration: none;
+			  color: #fff;
+			  display: block;
+			  font-size:180%
+			}
+			#menu a:hover {
+			  background: #F1F1F1;
+			  color: #333;
+			}
+			.sub-menu li {
+			 display: none;
+			}
+			.sub-menu {
+			 display: none;
+			 position: absolute;
+			}
+			#menu li:hover .sub-menu {
+			 display: block;
+			}
+			/*==Dropdown Menu==*/
+			.sub-menu li {
+			 margin-left: 0 !important;
+			}
+			#banner img {
+			width: 1100px;
+			height: 320px;
+			}
+			.slideshow-container {
+			  max-width: 1100px;
+			  position: relative;
+			  margin: auto;
+			
+			}
+			/* Ẩn các slider */
+			.mySlides {
+				display: none;
+			}
+		/* định dạng các chấm chuyển đổi các slide */
+			.dot {
+			  cursor:pointer;
+			  height: 20px;
+			  width: 20px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.2s ease;
+			}
+		/* khi được hover, active đổi màu nền */
+			.active, .dot:hover {
+			  background-color: #717171;
+			}
+			 
+			/* Thêm hiệu ứng khi chuyển đổi các slide */
+			.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration:5s;
+			  animation-name: fade;
+			  animation-duration: 5s;
+			}
+			 
+			@-webkit-keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+			 
+			@keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+			
+	/*Định nghĩa grid list sản phầm
+	- display: gird;
+	- grid-template-columns: auto auto auto auto: 4 column;
+	- grid-gap: Định nghĩa khoảng cách giữa các hàng, cột;
+	*/
+	h1{
+		font-size:250%;
+		text-align:center;
+		color:#DD0000
+	}
+	h2{
+		font-size:200%;
+		text-align:center;
+		color:#DD0000
+	}
+		.grid-container {
+		  display: grid;
+		  grid-template-columns: auto auto auto auto;
+		  padding: 10px;
+		  grid-gap: 10px 30px;
+		}
+
+		/*Thuộc tính cho từng sản phẩm*/
+
+		.grid-item {
+			width: 200px;
+			padding: 10px;
+			font-size: 30px;
+			text-align: center;/*sắp xếp sản phẩm theo chiều ngang nằm giữa*/
+		}
+
+		/*Định nghĩa thẻ a trong class .grid-container*/
+
+		.grid-container a {
+			background-color: transparent;/*Thiết lập màu cho boder*/
+			border-radius: 5px;
+			text-decoration: none;/*Định dạng văn bản bình thường, dạng mặc định*/
+			padding: 5px;
+		}
+
+		/*Hiệu ứng khi di chuột vào thẻ a*/
+
+		.grid-container a:hover { 
+			background-color: #CCFFCC;/*khi di chuột vào hiện hiệu ứng màu xanh*/
+			border-radius: 5px;
+		}
+
+		.productimg {
+			width: 170px;
+			height: 190px;
+		}
+
+		/*Định nghĩa cho tên, giá, nút đặt hàng*/
+
+		.item-name {
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 28px;
+			color: #010101;
+			margin-bottom: 10px;
+			overflow: hidden;/*dấu tex bị tràn*/
+			min-height: 28px;/*chiều cao tối thiểu của thuộc tính*/
+		}
+
+		.item-price {
+			font-weight: 900;
+			color: #0C713D;
+			font-size: 18px;
+		}
+
+		.add-to-card {
+			color: #0C713D;
+			border-color: #0C713D;
+			padding: 5px 20px;
+			font-size: 14px;
+			background-color: transparent;/*Thiết lập màu cho boder*/
+			border-radius: 5px;
+		}
+
+		/*Hiệu ứng khi di vào nút đặt hàng*/
+
+		.add-to-card:hover {
+			background-color: #0C713D;
+			color: #FFF;
+			border-color: transparent;/*Thiết lập màu cho boder*/
+			font-weight: bold;
+			border-radius: 5px;
+		}
+		/*Phần footer*/
+		#footer {
+			background: #339966;
+			width: 1100px;
+			text-align: center; /*căn chữ ra giữa*/
+			font-size:150%;
+			color: #FFFFCC;
+			clear: left;/*cho thẻ không bị tràn lên*/
+			line-height: 30px;/*khoảng cách giữa các dòng*/
+		}
+		
